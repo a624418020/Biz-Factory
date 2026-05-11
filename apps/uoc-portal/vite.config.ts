@@ -49,37 +49,6 @@ export default defineConfig(({ mode }) => {
           changeOrigin: true,
           secure: false,
         },
-        '/api': {
-          target: env.VITE_APP_BASEURL_ROOT,
-          changeOrigin: true,
-          secure: false,
-        },
-        '/hdmap-service': {
-          target: env.VITE_APP_BASEURL_ROOT,
-          changeOrigin: true,
-          secure: false,
-        },
-        '/geoserver': {
-          target: env.VITE_APP_GEOSERVER_URL || env.VITE_APP_BASEURL_ROOT || 'http://127.0.0.1:8080/geoserver',
-          changeOrigin: true,
-          secure: false,
-          rewrite: (proxyPath: string) => proxyPath.replace(/^\/geoserver/, ''),
-        },
-        '/bucket-': {
-          target: env.VITE_APP_BASEURL_ROOT,
-          changeOrigin: true,
-          secure: false,
-        },
-        '/tileserver': {
-          target: env.VITE_APP_BASEURL_ROOT,
-          changeOrigin: true,
-          secure: false,
-        },
-        '/WS': {
-          target: env.VITE_APP_BASEURL_WEBSOCKET,
-          ws: true,
-          secure: false,
-        },
       },
     },
     build: {

@@ -2,18 +2,6 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <!-- 动态加载样式表 -->
-      <script>
-          const baseUrl = window.location.origin + '/bucket-uniauth-public';
-          // 动态加载样式表
-          ['icon-menu', 'icon-map', 'icon-main','uav-icon-menu'].forEach(iconSet => {
-              const link = document.createElement('link');
-              link.rel = 'stylesheet';
-              link.type = 'text/css';
-              link.href = `${baseUrl}/${iconSet}/iconfont.css`;
-              document.head.appendChild(link);
-          });
-      </script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>统一门户</title>
   </head>
