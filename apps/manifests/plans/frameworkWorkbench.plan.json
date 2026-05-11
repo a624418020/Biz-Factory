@@ -1,0 +1,87 @@
+{
+  "id": "plan:framework-workbench",
+  "name": "frameworkWorkbench",
+  "title": "框架工作台",
+  "source": "core",
+  "status": "enabled",
+  "description": "用于管理业务应用、页面资产和导航方案的标准控制台方案。",
+  "homePageId": "page:app-management",
+  "menus": [
+    {
+      "id": "studioWorkspace",
+      "name": "studioWorkspace",
+      "title": "应用装配中心",
+      "route": "/studio",
+      "iconName": "icon-menu2level",
+      "description": "",
+      "meta": {
+        "iconComponent": "Dish",
+        "iconName": "icon-menu2level",
+        "title": "应用装配中心",
+        "description": ""
+      },
+      "children": [
+        {
+          "id": "studioDemoWorkspace",
+          "name": "studioDemoWorkspace",
+          "title": "演示工作区",
+          "route": "/demo/workspace",
+          "iconName": "icon-menu2level",
+          "pageId": "page:demo-workspace",
+          "description": "",
+          "meta": {
+            "iconName": "icon-menu2level",
+            "title": "演示工作区",
+            "description": ""
+          },
+          "children": []
+        },
+        {
+          "id": "appManagement",
+          "name": "appManagement",
+          "title": "业务应用",
+          "route": "/studio/apps",
+          "iconName": "icon-menu2level",
+          "pageId": "page:app-management",
+          "description": "",
+          "meta": {
+            "iconName": "icon-menu2level",
+            "title": "业务应用",
+            "description": ""
+          },
+          "children": []
+        },
+        {
+          "id": "pageManagement",
+          "name": "pageManagement",
+          "title": "页面能力库",
+          "route": "/studio/pages",
+          "iconName": "icon-menu2level",
+          "pageId": "page:page-management",
+          "description": "",
+          "meta": {
+            "iconName": "icon-menu2level",
+            "title": "页面能力库",
+            "description": ""
+          },
+          "children": []
+        },
+        {
+          "id": "menuManagement",
+          "name": "menuManagement",
+          "title": "导航方案",
+          "route": "/studio/schemes",
+          "iconName": "icon-menu2level",
+          "pageId": "page:menu-management",
+          "description": "",
+          "meta": {
+            "iconName": "icon-menu2level",
+            "title": "导航方案",
+            "description": ""
+          },
+          "children": []
+        }
+      ]
+    }
+  ]
+}

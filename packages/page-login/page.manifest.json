@@ -1,0 +1,22 @@
+{
+  "id": "page:login",
+  "name": "pageLogin",
+  "title": "公共登录页",
+  "route": "/login",
+  "packageName": "@biz/page-login",
+  "entry": "src/index.vue",
+  "source": "core",
+  "center": "Framework Core",
+  "businessDomain": "Authentication",
+  "pageCategory": "Login",
+  "status": "enabled",
+  "iconName": "icon-menu2level",
+  "description": "独立应用默认可复用的公共登录页。",
+  "tags": [],
+  "meta": {
+    "menuAlive": "pageLogin",
+    "title": "公共登录页",
+    "iconName": "icon-menu2level",
+    "description": "独立应用默认可复用的公共登录页。"
+  }
+}

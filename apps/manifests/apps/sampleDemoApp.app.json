@@ -1,0 +1,24 @@
+{
+  "id": "app:sample-demo",
+  "name": "sampleDemoApp",
+  "title": "示例业务应用",
+  "appType": "standalone",
+  "source": "sample",
+  "status": "enabled",
+  "description": "用于演示业务独立交付形态的样例应用。",
+  "planId": "plan:sample-solution",
+  "loginPageType": "page-login",
+  "homePageId": "page:demo-dashboard",
+  "build": {
+    "basePath": "/sampleDemoApp/",
+    "outDir": "dist-sampleDemoApp-standalone"
+  },
+  "runtime": {
+    "shellPackage": "@biz/assembly-portal",
+    "devCommand": "pnpm -F @biz/assembly-portal dev -- plan:sample-solution --port 8083",
+    "devPort": 8083,
+    "basePath": "/sampleDemoApp",
+    "defaultRoute": "/demo/dashboard",
+    "openBehavior": "auto-tab"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "id": "app:itg-host",
+  "name": "itgHostApp",
+  "title": "ITG 基座",
+  "appType": "host",
+  "source": "core",
+  "status": "enabled",
+  "description": "提供登录、门户、头部切换和微应用容器的宿主基座。",
+  "planId": "plan:framework-workbench",
+  "loginPageType": "host-login",
+  "homePageId": "page:app-management",
+  "build": {
+    "basePath": "/",
+    "outDir": "dist-itg-host"
+  },
+  "runtime": {
+    "shellPackage": "@biz/itg-portal",
+    "devCommand": "pnpm -F @biz/itg-portal dev",
+    "devPort": 8090,
+    "basePath": "/",
+    "defaultRoute": "/login",
+    "openBehavior": "manual"
+  }
+}

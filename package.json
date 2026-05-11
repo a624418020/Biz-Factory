@@ -1,0 +1,30 @@
+{
+  "name": "biz-factory-demo",
+  "private": true,
+  "description": "Modern front-end app assembly workspace",
+  "packageManager": "pnpm@9.0.0",
+  "engines": {
+    "node": ">=20 <23",
+    "pnpm": ">=9 <11"
+  },
+  "scripts": {
+    "dev": "node scripts/dev-entry.mjs",
+    "build": "pnpm -F @biz/assembly-portal build:framework",
+    "internal:dev:itg": "pnpm -F @biz/itg-portal dev",
+    "internal:build:itg": "pnpm -F @biz/itg-portal build",
+    "internal:dev:assembly": "pnpm -F @biz/assembly-portal dev",
+    "internal:build:assembly": "pnpm -F @biz/assembly-portal build",
+    "internal:dev:uoc": "pnpm -F @biz/uoc-portal dev",
+    "internal:build:uoc": "pnpm -F @biz/uoc-portal build",
+    "internal:worktree:uoc": "pnpm -F @biz/uoc-portal worktree:framework",
+    "internal:worktree:assembly": "pnpm -F @biz/assembly-portal worktree:sample",
+    "gen:page": "node scripts/gen-page.mjs",
+    "validate:manifests": "node scripts/validate-manifests.mjs",
+    "check:p0": "node scripts/check-p0.mjs"
+  },
+  "devDependencies": {
+    "ajv": "^8.17.1",
+    "typescript": "^5.0.0",
+    "vite": "^5.0.0"
+  }
+}

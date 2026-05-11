@@ -1,0 +1,25 @@
+{
+  "id": "app:studio-micro",
+  "name": "studioMicroApp",
+  "title": "装配平台子应用",
+  "appType": "micro",
+  "source": "core",
+  "status": "enabled",
+  "description": "运行在 ITG 基座中的装配平台子应用壳，承载演示工作区、应用、页面和菜单管理页面。",
+  "planId": "plan:framework-workbench",
+  "loginPageType": "host-login",
+  "homePageId": "page:app-management",
+  "build": {
+    "basePath": "/studioMicroApp/",
+    "outDir": "dist-app-studio-micro"
+  },
+  "runtime": {
+    "shellPackage": "@biz/uoc-portal",
+    "devCommand": "pnpm -F @biz/uoc-portal dev -- plan:framework-workbench --port 8081",
+    "devPort": 8081,
+    "basePath": "/studioMicroApp",
+    "defaultRoute": "/studio/apps",
+    "hostAppId": "app:itg-host",
+    "openBehavior": "manual"
+  }
+}

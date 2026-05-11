@@ -1,0 +1,102 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "biz-factory/plan.schema.json",
+  "title": "Biz Factory Plan Manifest",
+  "type": "object",
+  "required": [
+    "id",
+    "name",
+    "title",
+    "source",
+    "status",
+    "menus"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^plan:.+"
+    },
+    "name": {
+      "type": "string",
+      "minLength": 1
+    },
+    "title": {
+      "type": "string",
+      "minLength": 1
+    },
+    "source": {
+      "type": "string",
+      "enum": [
+        "core",
+        "sample",
+        "hybrid"
+      ]
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "enabled",
+        "draft",
+        "deprecated",
+        "disabled"
+      ]
+    },
+    "description": {
+      "type": "string"
+    },
+    "homePageId": {
+      "type": "string",
+      "pattern": "^page:.+"
+    },
+    "menus": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/menuNode"
+      }
+    }
+  },
+  "$defs": {
+    "menuNode": {
+      "type": "object",
+      "required": [
+        "id",
+        "name",
+        "title",
+        "route"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "name": {
+          "type": "string",
+          "minLength": 1
+        },
+        "title": {
+          "type": "string",
+          "minLength": 1
+        },
+        "route": {
+          "type": "string",
+          "pattern": "^/"
+        },
+        "iconName": {
+          "type": "string"
+        },
+        "pageId": {
+          "type": "string",
+          "pattern": "^page:.+"
+        },
+        "children": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/menuNode"
+          }
+        }
+      },
+      "additionalProperties": true
+    }
+  },
+  "additionalProperties": true
+}

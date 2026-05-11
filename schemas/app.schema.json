@@ -1,0 +1,126 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "biz-factory/app.schema.json",
+  "title": "Biz Factory App Manifest",
+  "type": "object",
+  "required": [
+    "id",
+    "name",
+    "title",
+    "appType",
+    "source",
+    "status",
+    "planId",
+    "loginPageType"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^app:.+"
+    },
+    "name": {
+      "type": "string",
+      "minLength": 1
+    },
+    "title": {
+      "type": "string",
+      "minLength": 1
+    },
+    "appType": {
+      "type": "string",
+      "enum": [
+        "host",
+        "micro",
+        "standalone"
+      ]
+    },
+    "source": {
+      "type": "string",
+      "enum": [
+        "core",
+        "sample",
+        "hybrid"
+      ]
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "enabled",
+        "draft",
+        "deprecated",
+        "disabled"
+      ]
+    },
+    "description": {
+      "type": "string"
+    },
+    "planId": {
+      "type": "string",
+      "pattern": "^plan:.+"
+    },
+    "loginPageType": {
+      "type": "string",
+      "enum": [
+        "host-login",
+        "page-login"
+      ]
+    },
+    "homePageId": {
+      "type": "string",
+      "pattern": "^page:.+"
+    },
+    "build": {
+      "type": "object"
+    },
+    "runtime": {
+      "type": "object",
+      "required": [
+        "shellPackage",
+        "devCommand",
+        "devPort",
+        "basePath",
+        "defaultRoute",
+        "openBehavior"
+      ],
+      "properties": {
+        "shellPackage": {
+          "type": "string",
+          "enum": [
+            "@biz/itg-portal",
+            "@biz/uoc-portal",
+            "@biz/assembly-portal"
+          ]
+        },
+        "devCommand": {
+          "type": "string",
+          "minLength": 1
+        },
+        "devPort": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "basePath": {
+          "type": "string",
+          "pattern": "^/"
+        },
+        "defaultRoute": {
+          "type": "string",
+          "pattern": "^/"
+        },
+        "hostAppId": {
+          "type": "string",
+          "pattern": "^app:.+"
+        },
+        "openBehavior": {
+          "type": "string",
+          "enum": [
+            "auto-tab",
+            "manual"
+          ]
+        }
+      },
+      "additionalProperties": true
+    }
+  },
+  "additionalProperties": true
+}

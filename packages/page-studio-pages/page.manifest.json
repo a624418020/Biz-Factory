@@ -1,0 +1,22 @@
+{
+  "id": "page:page-management",
+  "name": "pageManagement",
+  "title": "页面能力库",
+  "route": "/studio/pages",
+  "packageName": "@biz/page-studio-pages",
+  "entry": "src/index.vue",
+  "source": "core",
+  "center": "Framework Core",
+  "businessDomain": "Studio Governance",
+  "pageCategory": "Management",
+  "status": "enabled",
+  "iconName": "icon-menu2level",
+  "description": "维护可复用页面资产、归属、分类和引用关系。",
+  "tags": [],
+  "meta": {
+    "menuAlive": "pageManagement",
+    "title": "页面能力库",
+    "iconName": "icon-menu2level",
+    "description": "维护可复用页面资产、归属、分类和引用关系。"
+  }
+}

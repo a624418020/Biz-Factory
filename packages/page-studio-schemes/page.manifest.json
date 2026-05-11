@@ -1,0 +1,22 @@
+{
+  "id": "page:menu-management",
+  "name": "menuManagement",
+  "title": "导航方案",
+  "route": "/studio/schemes",
+  "packageName": "@biz/page-studio-schemes",
+  "entry": "src/index.vue",
+  "source": "core",
+  "center": "Framework Core",
+  "businessDomain": "Studio Governance",
+  "pageCategory": "Management",
+  "status": "enabled",
+  "iconName": "icon-menu2level",
+  "description": "装配导航树，并将可复用页面绑定到交付方案中。",
+  "tags": [],
+  "meta": {
+    "menuAlive": "menuManagement",
+    "title": "导航方案",
+    "iconName": "icon-menu2level",
+    "description": "装配导航树，并将可复用页面绑定到交付方案中。"
+  }
+}

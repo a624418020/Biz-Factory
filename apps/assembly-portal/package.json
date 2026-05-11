@@ -1,0 +1,39 @@
+{
+  "name": "@biz/assembly-portal",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "node ./scripts/run-app.mjs --port 8082",
+    "build": "node ./scripts/build-app.mjs",
+    "dev:framework": "node ./scripts/run-app.mjs plan:framework-workbench --port 8082",
+    "build:framework": "node ./scripts/build-app.mjs plan:framework-workbench",
+    "dev:sample": "node ./scripts/run-app.mjs plan:standalone-showcase --port 8082",
+    "build:sample": "node ./scripts/build-app.mjs plan:standalone-showcase",
+    "worktree": "node ./scripts/create-dev-worktree.mjs",
+    "worktree:sample": "node ./scripts/create-dev-worktree.mjs plan:standalone-showcase",
+    "generate:pages": "node ./scripts/generate-page-modules.mjs",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@biz/common": "workspace:*",
+    "@biz/page-studio-apps": "workspace:*",
+    "@biz/page-studio-schemes": "workspace:*",
+    "@biz/page-studio-pages": "workspace:*",
+    "@element-plus/icons-vue": "^2.3.1",
+    "dayjs": "^1.11.10",
+    "element-plus": "2.9.11",
+    "pinia": "^2.2.8",
+    "vue": "^3.5.12",
+    "vue-router": "^4.4.5",
+    "xe-utils": "^3.5.30"
+  },
+  "devDependencies": {
+    "@types/nprogress": "^0.2.3",
+    "@vitejs/plugin-vue": "^5.1.4",
+    "nprogress": "^0.2.0",
+    "sass": "^1.81.0",
+    "typescript": "~5.6.2",
+    "vite": "6.3.4"
+  }
+}

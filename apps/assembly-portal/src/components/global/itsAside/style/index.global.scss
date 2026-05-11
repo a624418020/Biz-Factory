@@ -1,0 +1,55 @@
+// its-aside 全局样式
+.its-aside-menu-popper {
+  --el-menu-item-height: 28px;
+  --el-menu-base-level-padding: 8px;
+  --el-menu-active-color: var(--el-color-primary);
+  border: unset !important;
+
+  &.el-popper {
+    transform: translateX(4px);
+  }
+
+  .el-menu--popup {
+    padding: 6px;
+    min-width: 160px;
+    border-radius: 4px;
+  }
+
+  .el-sub-menu {
+    .el-sub-menu__title {
+      padding-right: 20px;
+
+      .iconfont-nav {
+        display: none;
+      }
+    }
+  }
+
+  .el-sub-menu.is-active {
+    background-color: var(--its-selected-color);
+
+    >.el-sub-menu__title {
+      padding-right: 20px;
+      color: var(--el-menu-active-color);
+    }
+  }
+
+  .el-menu-item {
+    margin-bottom: 2px;
+    height: 32px;
+    border-radius: 2px;
+
+    .el-icon {
+      display: none;
+    }
+
+    &.is-active {
+      background-color: var(--its-selected-color);
+    }
+
+    &:hover {
+      background-color: var(--its-selected-color);
+      color: var(--el-menu-active-color);
+    }
+  }
+}

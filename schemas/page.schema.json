@@ -1,0 +1,84 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "biz-factory/page.schema.json",
+  "title": "Biz Factory Page Manifest",
+  "type": "object",
+  "required": [
+    "id",
+    "name",
+    "title",
+    "route",
+    "packageName",
+    "entry",
+    "source",
+    "status"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^page:.+"
+    },
+    "name": {
+      "type": "string",
+      "minLength": 1
+    },
+    "title": {
+      "type": "string",
+      "minLength": 1
+    },
+    "route": {
+      "type": "string",
+      "pattern": "^/"
+    },
+    "packageName": {
+      "type": "string",
+      "pattern": "^@biz/.+"
+    },
+    "entry": {
+      "type": "string",
+      "minLength": 1
+    },
+    "source": {
+      "type": "string",
+      "enum": [
+        "core",
+        "sample",
+        "hybrid"
+      ]
+    },
+    "center": {
+      "type": "string"
+    },
+    "businessDomain": {
+      "type": "string"
+    },
+    "pageCategory": {
+      "type": "string"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "enabled",
+        "draft",
+        "deprecated",
+        "disabled"
+      ]
+    },
+    "iconName": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "tags": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "meta": {
+      "type": "object"
+    }
+  },
+  "additionalProperties": true
+}

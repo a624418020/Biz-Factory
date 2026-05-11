@@ -1,0 +1,22 @@
+{
+  "id": "page:demo-workspace",
+  "name": "demoWorkspace",
+  "title": "演示工作区",
+  "route": "/demo/workspace",
+  "packageName": "@biz/page-demo-workspace",
+  "entry": "src/index.vue",
+  "source": "sample",
+  "center": "Sample Solution",
+  "businessDomain": "Customer Delivery",
+  "pageCategory": "Workspace",
+  "status": "enabled",
+  "iconName": "icon-menu2level",
+  "description": "展示装配应用如何承载定制体验的示例工作区。",
+  "tags": [],
+  "meta": {
+    "menuAlive": "demoWorkspace",
+    "title": "演示工作区",
+    "iconName": "icon-menu2level",
+    "description": "展示装配应用如何承载定制体验的示例工作区。"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "id": "page:app-management",
+  "name": "appManagement",
+  "title": "业务应用",
+  "route": "/studio/apps",
+  "packageName": "@biz/page-studio-apps",
+  "entry": "src/index.vue",
+  "source": "core",
+  "center": "Framework Core",
+  "businessDomain": "Studio Governance",
+  "pageCategory": "Management",
+  "status": "enabled",
+  "iconName": "icon-menu2level",
+  "description": "管理可复用的业务应用定义、运行形态和交付目标。",
+  "tags": [],
+  "meta": {
+    "menuAlive": "appManagement",
+    "title": "业务应用",
+    "iconName": "icon-menu2level",
+    "description": "管理可复用的业务应用定义、运行形态和交付目标。"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "id": "page:demo-dashboard",
+  "name": "demoDashboard",
+  "title": "演示看板",
+  "route": "/demo/dashboard",
+  "packageName": "@biz/page-demo-dashboard",
+  "entry": "src/index.vue",
+  "source": "sample",
+  "center": "Sample Solution",
+  "businessDomain": "Operations Console",
+  "pageCategory": "Dashboard",
+  "status": "enabled",
+  "iconName": "icon-menu2level",
+  "description": "用于展示框架能力的轻量演示看板。",
+  "tags": [],
+  "meta": {
+    "menuAlive": "demoDashboard",
+    "title": "演示看板",
+    "iconName": "icon-menu2level",
+    "description": "用于展示框架能力的轻量演示看板。"
+  }
+}

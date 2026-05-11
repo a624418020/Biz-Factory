@@ -1,0 +1,56 @@
+{
+  "id": "plan:sample-solution",
+  "name": "sampleSolution",
+  "title": "示例方案",
+  "source": "sample",
+  "status": "enabled",
+  "description": "仅由演示页面组成的轻量示例方案。",
+  "homePageId": "page:demo-dashboard",
+  "menus": [
+    {
+      "id": "demoSolution",
+      "name": "demoSolution",
+      "title": "演示方案",
+      "route": "/demo",
+      "iconName": "icon-menu2level",
+      "description": "",
+      "meta": {
+        "iconName": "icon-menu2level",
+        "title": "演示方案",
+        "description": ""
+      },
+      "children": [
+        {
+          "id": "demoDashboard",
+          "name": "demoDashboard",
+          "title": "演示看板",
+          "route": "/demo/dashboard",
+          "iconName": "icon-menu2level",
+          "pageId": "page:demo-dashboard",
+          "description": "",
+          "meta": {
+            "iconName": "icon-menu2level",
+            "title": "演示看板",
+            "description": ""
+          },
+          "children": []
+        },
+        {
+          "id": "demoWorkspace",
+          "name": "demoWorkspace",
+          "title": "演示工作区",
+          "route": "/demo/workspace",
+          "iconName": "icon-menu2level",
+          "pageId": "page:demo-workspace",
+          "description": "",
+          "meta": {
+            "iconName": "icon-menu2level",
+            "title": "演示工作区",
+            "description": ""
+          },
+          "children": []
+        }
+      ]
+    }
+  ]
+}
